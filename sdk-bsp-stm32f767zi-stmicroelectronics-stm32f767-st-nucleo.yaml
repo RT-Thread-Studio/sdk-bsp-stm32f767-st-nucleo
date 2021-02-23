@@ -1,0 +1,103 @@
+board:
+  buy_url_cn: https://www.st.com/zh/evaluation-tools/nucleo-f767zi.html#sample-buy
+  buy_url_global: https://www.st.com/en/evaluation-tools/nucleo-f767zi.html#sample-buy
+  debug_interface: SWD
+  debugger: ST-LINK
+  description_en: The STM32F765xx, STM32F767xx, STM32F768Ax and STM32F769xx devices
+    are based on the high-performance Arm® Cortex®-M7 32-bit RISC core operating at
+    up to 216 MHz frequency. The Cortex®-M7 core features a floating point unit (FPU)
+    which supports Arm® double-precision and single-precision data-processing instructions
+    and data types. It also implements a full set of DSP instructions and a memory
+    protection unit (MPU) which enhances the application security.
+  description_zh: NUCLEO-F767ZI 是st推出的一款基于 ARM Cortex-M7 内核的开发板，最高主频为 216Mhz，该开发板具有丰富的板载资源，可以充分发挥
+    STM32F767 的芯片性能。
+  emulator_machine: ''
+  large_image: documents/images/en.high-perf_nucleo-144_mbed.png
+  name: STM32F767-ST-NUCLEO
+  price_cn: 518 CNY
+  price_global: 80.23 USD
+  sale_contact_cn: https://www.st.com/zh/evaluation-tools/nucleo-f767zi.html
+  sale_contact_global: https://www.st.com/en/evaluation-tools/nucleo-f767zi.html
+  small_image: documents/images/en.high-perf_nucleo-144_samll.png
+  vendor: STMicroelectronics
+  version: 1.0.0
+chip:
+  chip_name: STM32F767ZI
+  clock_source: HSE
+  device_vendor: STMicroelectronics
+  family_name: STM32
+  rx_name: PA10
+  series_name: STM32F7
+  source_freq: '8000000'
+  sub_series_name: STM32F767
+  target_freq: '240000000'
+  tx_name: PA9
+  uart_name: UART1
+docs:
+- category: manual
+  file: documents/dm00105928-getting-started-with-stm32-nucleo-board-software-development-tools-stmicroelectronics.pdf
+  title: dm00105928-getting-started-with-stm32-nucleo-board-software-development-tools-stmicroelectronics
+example_projects: []
+features:
+- 'MCU: STM32F767, 216MHz, 2MB Flash, 512KB RAM, 16K CACHE'
+- 'LED: 3, LED1 (green, PB0),LED2 (blue, PB7), LED3 (red, PB14)'
+- 'Keys: 2, B1 (user key, PC13), B2 (reset pin)'
+features_zh:
+- MCU：STM32f767，主频 216MHz，2MB FLASH ，512KB RAM ，16K CACHE
+- LED ：3个，LED1 (绿色，PB0),LED2（蓝色，PB7），LED3（红色，PB14）
+- 按键：2个，B1（用户按键，PC13），B2（复位引脚）
+pkg_type: Board_Support_Packages
+pkg_vendor: RealThread
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - .cproject
+    - .project
+    - .settings
+    - applications
+    - board
+    - cconfig.h
+    - figures
+    - Kconfig
+    - libraries
+    - makefile.targets
+    - project.ewd
+    - project.ewp
+    - project.eww
+    - project.uvoptx
+    - project.uvprojx
+    - README.md
+    - README_zh.md
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig_preinc.h
+    - SConscript
+    - SConstruct
+    - template.ewp
+    - template.eww
+    - template.uvoptx
+    - template.uvprojx
+    source_path_offset: project_0
+    target_path_offset: ''
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: rt-thread 4.0.2
+    source_path_offset: ''
+    target_path_offset: rt-thread
+  project_description: ''
+  project_name: stm32f767-st-nucleo
+  project_type: rt-thread 4.0.2
+yaml_version: 3
