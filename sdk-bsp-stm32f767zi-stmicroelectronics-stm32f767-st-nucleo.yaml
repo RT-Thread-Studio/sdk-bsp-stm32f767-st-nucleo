@@ -52,6 +52,7 @@ pkg_version: 1.0.0
 template_projects:
 - builtin_files:
   - files_and_folders:
+    - .config
     - .cproject
     - .project
     - .settings
@@ -94,10 +95,10 @@ template_projects:
     package_name: RT-Thread
     package_type: RT-Thread_Source_Code
     package_vendor: ''
-    package_version: 4.0.2
-    source_path_offset: ''
+    package_version: latest
+    source_path_offset: rt-thread
     target_path_offset: rt-thread
   project_description: ''
   project_name: stm32f767-st-nucleo
-  project_type: rt-thread|@full|@4.0.2
+  project_type: rt-thread|@full|@latest
 yaml_version: 3
